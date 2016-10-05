@@ -1,8 +1,8 @@
-# Image-Server-Store
-One way to save image and more adaptively uses them as possible and quickly
+# Image Server Store
+Uma forma para guardar imagem e usa-las de forma o mais adaptada possível e com rapidez
 
 
-### Como usar
+## Como usar
 
 > {domain}image/{id}-{width}.{extencao}
 
@@ -12,8 +12,9 @@ One way to save image and more adaptively uses them as possible and quickly
 
 >	image/nome-para-seo---123-250.jpg
 
-### informações
+### informações e opções de uso
 
+>	{id}-{width}.{extension} 
 >	{nome-amigavel}---{id}-{width}.{extension}
 
 
