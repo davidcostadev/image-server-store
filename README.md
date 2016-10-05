@@ -6,18 +6,25 @@ Uma forma para guardar imagem e usa-las de forma o mais adaptada possível e com
 
 > {domain}image/{id}-{width}.{extencao}
 
+### Uso curto
 
-### para usar com boas praticas de SEO
+>	image/123-250.jpg
+
+### Com boas praticas de SEO
 
 
 >	image/nome-para-seo---123-250.jpg
 
-### informações e opções de uso
+### Informações e opções de uso
+
+**Sem nome**
 
 >	{id}-{width}.{extension} 
+
+**Com nome**
 >	{nome-amigavel}---{id}-{width}.{extension}
 
 
-## TODO
+## TO DO
 
 * Adicionar função de CROP 
