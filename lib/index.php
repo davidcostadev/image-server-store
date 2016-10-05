@@ -5,20 +5,21 @@
  * @email       davidcosta@csthost.com.br
  * @url         davidcosta.com.br
  *
- * @copyright   Copyright (C) August 2014 - CSTHost WEB Builder, Inc. All rights reserved.
+ * @copyright   Copyright (C) August 2014 - David Costa Inc. All rights reserved.
  * @license     MIT
  */
+
 
 ini_set('memory_limit','256M');
 
 //Configurações padroes--------------------------------------------------------
 define('SYS_IMG_WIDTHDEFAULT', 250);
 
-define('SYS_IMG_PATH_CACHE', '/../');
+define('SYS_IMG_PATH_CACHE', '/../image/');
 
 define('SYS_IMG_PATH_SOURCE', '/../source/');
 
-define('SYS_IMG_SHOW_ERROR', false);
+define('SYS_IMG_SHOW_ERROR', true);
 
 define('SYS_IMG_CACHE_NAVEGADOR', true);
 
@@ -163,7 +164,7 @@ $nomeArquivoOriginal = "{$id}-{$child}.{$extencao}";
 $nomeArquivoCache    = "{$id}-{$width}-{$child}.{$extencao}";
  
 $fileOriginal      = __DIR__.SYS_IMG_PATH_SOURCE . $nomeArquivoOriginal;
-$fileCacheFiltrado = __DIR__.'/../cache/'. $nomeArquivoCache;
+$fileCacheFiltrado = __DIR__.SYS_IMG_PATH_CACHE. $nomeArquivoCache;
 
 
 $filename = preg_replace('/[^A-Za-z0-9 _ .-]/', '', $path_parts['filename']);
