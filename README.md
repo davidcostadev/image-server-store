@@ -2,9 +2,15 @@
 Uma forma para guardar imagem e usa-las de forma o mais adaptada possível e com rapidez
 
 
+## Funcionalidades 
+
+- Cria um cache de imagem
+- Reendimenciona as imagens
+- Deixa a qualidade das imagens em 85% para ficar leve
+
 ## Como usar
 
-> {domain}image/{id}-{width}.{extencao}
+> {domain}image/{id}-{width}.{extension}
 
 ### Uso curto
 
