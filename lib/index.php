@@ -134,17 +134,14 @@ $dadosArray = explode('-', $dados);
 if (count($dadosArray) == 3) {
     $id    = $dadosArray[0];
     $width = $dadosArray[1];
-    $child = $dadosArray[2];
 
 } elseif(count($dadosArray) == 2) {
     $id    = $dadosArray[0];
     $width = $dadosArray[1];
-    $child = 1;
 
 } elseif(count($dadosArray) == 1) {
     $id    = $dadosArray[0];
     $width = SYS_IMG_WIDTHDEFAULT;
-    $child = 1;
     
 } else {
     if (SYS_IMG_SHOW_ERROR) {
@@ -160,8 +157,8 @@ if (count($dadosArray) == 3) {
 
 //Verificando se a imagem original existe------------------------------------------------
 
-$nomeArquivoOriginal = "{$id}-{$child}.{$extencao}";
-$nomeArquivoCache    = "{$id}-{$width}-{$child}.{$extencao}";
+$nomeArquivoOriginal = "{$id}.{$extencao}";
+$nomeArquivoCache    = "{$id}-{$width}.{$extencao}";
  
 $fileOriginal      = __DIR__.SYS_IMG_PATH_SOURCE . $nomeArquivoOriginal;
 $fileCacheFiltrado = __DIR__.SYS_IMG_PATH_CACHE. $nomeArquivoCache;
