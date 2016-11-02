@@ -3,7 +3,7 @@
 set_time_limit(40000);
 
 $arquivos = array();
-$dir      = __DIR__.'/image/';
+$dir      = __DIR__.'/img/post/';
 $handle   = opendir( $dir);
 
 
